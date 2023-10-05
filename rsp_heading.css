@@ -1,0 +1,103 @@
+body{
+    background-color:black;
+}
+.score-con{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin:20px;
+}
+p{
+    color:white;
+    font-weight:bold;
+    font-family:roboto, arial;
+    font-size: 20px;
+    
+}
+.rps-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+     
+}
+.btn{
+    font-family:roboto,sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:10px;
+    background-color:whitesmoke;
+    margin:10px;
+    border-style: solid;
+    transition: 3s;
+    display: inline-block;
+    border-radius:10px;
+    
+}
+.rock{
+    color:rgb(105, 112, 212);
+    border-color: rgb(166, 171, 239);
+    animation-name: rock;
+    animation-duration:7s;
+    box-shadow:  10px 10px 10px rgba(105, 112, 212, 0.5);
+}
+@keyframes rock {
+     
+        from {background-color: rgb(3, 3, 3);border-color: rgb(3,3,3);color:rgb(3,3,3);box-shadow: 10px 10px 10px rgb(3,3,3)}
+        to {background-color:white;color:rgb(105, 112, 212);
+            border-color: rgb(166, 171, 239);
+            box-shadow:  10px 10px 10px rgba(101, 110, 228, 0.5);}
+       
+}
+ 
+.papper{
+    border-color: rgb(214, 140, 118);
+    color:rgb(210, 70, 27);
+    box-shadow:  10px 10px 10px rgba(210, 70, 27, 0.5);
+    animation-name:papper;
+    animation-duration:7s;
+}
+@keyframes papper {
+     
+    from {background-color: rgb(3, 3, 3);border-color: rgb(3,3,3);color:rgb(3,3,3);box-shadow: 10px 10px 10px rgb(3,3,3) }
+    to {background-color:white; border-color: rgb(214, 140, 118);
+        color:rgb(210, 70, 27);
+        box-shadow:  10px 10px 10px rgba(201, 51, 6, 0.5);}
+   
+}
+.scissor{
+    border-color: rgb(140, 230, 158);
+    color:rgb(16, 226, 58);
+    box-shadow:  10px 10px 10px rgba(4, 137, 30, 0.5);
+    animation-name: scissor;
+    animation-duration:7s;
+}
+@keyframes scissor {
+     
+    from {background-color: rgb(3, 3, 3);border-color: rgb(3,3,3);color:rgb(3,3,3);box-shadow: 10px 10px 10px rgb(3,3,3)
+         }
+    to {background-color:whitesmoke; border-color: rgb(140, 230, 158);
+        color:rgb(16, 226, 58);
+        box-shadow:  10px 10px 10px rgba(16, 226, 58, 0.5);}
+   
+}
+
+.btn-reset{
+    background-color:whitesmoke;
+     border-color:grey;
+    color:grey;
+    box-shadow:  0px 0px 30px grey;
+    font-family:roboto,sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    padding:10px;
+    background-color:whitesmoke;
+    margin:10px;
+    border-style: solid;
+    text-align: center;
+    display: inline-block;
+    border-radius:10px;
+
+}
+.reset{
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="rsp_heading.css"/>
+         <link rel="stylesheet" href="rps_image.css"/>
+         
+        <title>
+            ROCK PAPER SCISSOR GAME
+        </title>
+        <script src="rps.js" defer></script>
+    </head>
+    <body>
+        <div class="score-con">
+        <p>YOU WIN : <span  id="win">0</span> &nbsp  YOU LOSS : <span id="loss">0</span></p>
+         <div class="rps-heading">
+            <div class="btn rock">ROCK</div>
+            <div class="btn papper">PAPPER</div>
+            <div class="btn scissor">SCISSOR</div>
+         </div>
+         <p> ROBOT WIN:<span id="rwin">0</span></p>
+        </div>
+         <div class="image-con">
+            <div id="rock" class="rps-image">
+                <img  class="image" src="game-images/rock.png"/>
+            </div>
+            <div id="paper" class="rps-image">
+                <img   class="image" src="game-images/paper.png"/>
+            </div>
+            <div id="scissor"  class="rps-image">
+                <img  class="image" src="game-images/scissors.png"/>
+            </div>
+         </div>
+         <div class="move">
+            <div> 
+            <img src=""   id="y_move" class="you-move" />
+            <p class="move-r" >YOUR MOVE</p>
+        </div>
+        <div> 
+            <img src=""   id="r_move" class="robo-move"/>
+            <p class="move-r">ROBO MOVE</p>
+        </div>
+         </div>
+         <p class="result" id="result"></p>
+         <div class="reset"> 
+         <button id="reset-btn" class="btn-reset">RESET</button>
+        </div>
+         
+    </body>
+</html>
